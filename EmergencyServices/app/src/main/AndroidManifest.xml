@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emergencyservices">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=  "@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--        android:theme="@android:style/Theme.NoTitleBar">-->
+        <activity android:name=".Past_user_detailsActivity"></activity>
+        <activity android:name=".Past_recordsActivity" />
+        <activity android:name=".Requests_serviceproviderDetailsActivity" />
+        <activity android:name=".Request_userDetailsActivity" />
+        <activity android:name=".Main_seviceproviderActivity" />
+        <activity android:name=".Login_serviceproviderActivity" />
+        <activity android:name=".Profile_serviceprovider" />
+        <activity android:name=".User_typeActivity" />
+        <activity android:name=".Signup_serviceproviderActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".SearchingActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
